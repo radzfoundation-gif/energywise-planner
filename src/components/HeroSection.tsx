@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-energy.jpg";
 
 export const HeroSection = () => {
@@ -37,9 +38,11 @@ export const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="hero" size="lg" className="text-base px-8">
-              Start Your Free Trial
-            </Button>
+            <Link to="/auth">
+              <Button variant="hero" size="lg" className="text-base px-8">
+                Start Your Free Trial
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="text-base">
               Watch Demo
             </Button>
